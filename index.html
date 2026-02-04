@@ -15,19 +15,80 @@
 
 <body>
 
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
+ <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo.jpg" height="36" alt="logo">
+      SuzyHikes
+    </a>
 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Trails</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
+<!-- HERO / WELCOME -->
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Welcome to SuzyHikes!</h1>
+    <p class="col-md-8 fs-4">
+      Discover amazing hiking trails and start your next adventure.
+    </p>
+    <button class="btn btn-secondary btn-lg" type="button">
+      Login / Signup
+    </button>
+  </div>
+</div>
+
+<!-- CARD SECTION -->
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/hike1.jpg" class="card-img-top" alt="hike 1">
+        <div class="card-body">
+          <h5 class="card-title">Forest Trail</h5>
+          <p class="card-text">A peaceful forest hike for beginners.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/hike2.jpg" class="card-img-top" alt="hike 2">
+        <div class="card-body">
+          <h5 class="card-title">Mountain Trail</h5>
+          <p class="card-text">A challenging route with amazing views.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="./images/hike3.jpg" class="card-img-top" alt="hike 3">
+        <div class="card-body">
+          <h5 class="card-title">Lake Walk</h5>
+          <p class="card-text">Relaxing walk along the water.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 
 </html>
+<script type="module" src="./src/main.js"></script>
